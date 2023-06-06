@@ -1,7 +1,7 @@
 {
   "name": "goit-react-hw-01-components",
   "version": "0.1.0",
-"private": true,
+  "private": true,
   "homepage": "https://krzysztofrozbicki.github.io/goit-react-hw-01-components/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -36,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prop-types": "^15.8.1"
   }
 }
