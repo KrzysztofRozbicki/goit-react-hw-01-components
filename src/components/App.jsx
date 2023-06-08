@@ -1,24 +1,20 @@
 import './App.css';
 import user from './user/user.json';
 import friends from './friends/friends.json';
+import data from './data/data.json';
+import transactions from './transactions/transactions.json';
 import { Profile } from './user/user.jsx';
-import { Friends } from './friends/friends.jsx';
-
-// const Welcome = ({ name, age, city }) => {
-//   return (
-//     <div>
-//       <p>Hello, {name}</p>
-//       <p>You have {age} years old</p>
-//       <p>You live in {city}</p>
-//     </div>
-//   );
-// };
+import { FriendList } from './friends/friends.jsx';
+import { Statistics } from './data/data.jsx';
+import { TransactionHistory } from './transactions/transactions.jsx';
 
 export const App = () => {
   return (
     <div>
       <Profile {...user} />
-      <Friends friends={friends} />
+      <Statistics data={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory transactions={transactions} />
     </div>
   );
 };
